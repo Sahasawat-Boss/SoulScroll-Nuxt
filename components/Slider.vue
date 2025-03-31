@@ -50,7 +50,7 @@ defineProps(['items', 'itemActive'])
 .slider .list .item .content {
     position: absolute;
     left: 10%;
-    top: 20%;
+    top: 10%;
     width: 500px;
     max-width: 80%;
     z-index: 1;
@@ -62,7 +62,7 @@ defineProps(['items', 'itemActive'])
 }
 
 .slider .list .item .content h2 {
-    font-size: 100px;
+    font-size: 50px;
     margin: 0;
 }
 
@@ -94,29 +94,5 @@ defineProps(['items', 'itemActive'])
 
 .slider .list .item.active p:nth-child(3) {
     animation-duration: 1.3s;
-}
-
-.arrows {
-    position: absolute;
-    top: 30%;
-    right: 50px;
-    z-index: 100;
-}
-
-.arrows button {
-    background-color: #eee5;
-    border: none;
-    font-family: monospace;
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    font-size: x-large;
-    color: #eee;
-    transition: .5s;
-}
-
-.arrows button:hover {
-    background-color: #eee;
-    color: black;
 }
 </style>

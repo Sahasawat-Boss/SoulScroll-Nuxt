@@ -7,8 +7,8 @@
 
             <div class="arrows">
                 <button @click="prevSlide">
-                    Back </button>
-                        <button @click="nextSlide"> Next</button>
+                    B </button>
+                <button @click="nextSlide"> N</button>
             </div>
 
             <Thumbnail :items="items" :itemActive="itemActive" @slideTo="goToSlide" />
@@ -89,3 +89,29 @@ onBeforeUnmount(() => {
     clearInterval(interval)
 })
 </script>
+
+<style scoped>
+.arrows {
+    position: absolute;
+    top: 30%;
+    right: 50px;
+    z-index: 100;
+}
+
+.arrows button {
+    background-color: #eee5;
+    border: none;
+    font-family: monospace;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: x-large;
+    color: #eee;
+    transition: .5s;
+}
+
+.arrows button:hover {
+    background-color: #eee;
+    color: black;
+}
+</style>

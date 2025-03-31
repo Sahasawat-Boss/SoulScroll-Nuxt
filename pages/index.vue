@@ -10,7 +10,7 @@ let interval
 const showSlider = () => {
     scrollThumbnailIntoView()
     clearInterval(interval)
-    interval = setInterval(nextSlide, 5000)
+    interval = setInterval(nextSlide, 12000)
 }
 
 const nextSlide = () => {
@@ -54,40 +54,11 @@ onBeforeUnmount(() => {
         <div class="slider">
             <Slider :items="items" :itemActive="itemActive" />
 
-            <div class="arrows">
-                <button @click="prevSlide">
-                    B </button>
-                <button @click="nextSlide"> N</button>
-            </div>
-
-            <Thumbnail :items="items" :itemActive="itemActive" @slideTo="goToSlide" />
+            <Thumbnail :items="items" :itemActive="itemActive" @slideTo="goToSlide" @prev="prevSlide"
+                @next="nextSlide" />
         </div>
     </div>
 </template>
 <!--?======== Template ==========================================================-->
 
-<style scoped>
-.arrows {
-    position: absolute;
-    top: 30%;
-    right: 60px;
-    z-index: 100;
-}
-
-.arrows button {
-    background-color: #eee5;
-    border: none;
-    font-family: monospace;
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    font-size: x-large;
-    color: #eee;
-    transition: .5s;
-}
-
-.arrows button:hover {
-    background-color: #eee;
-    color: black;
-}
-</style>
+<style scoped></style>

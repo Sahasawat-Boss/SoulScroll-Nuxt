@@ -5,7 +5,7 @@
             <div class="content backdrop-blur-xs bg-black/15 p-4 rounded-xl">
                 <p>The Story of</p>
                 <h2>{{ item.title }}</h2>
-                <p class="text-lg indent-[1.1rem] tracking-wide">{{ item.description }}</p>
+                <p class="text-lg indent-[1.1rem] tracking-widest">{{ item.description }}</p>
             </div>
 
         </div>
@@ -45,15 +45,15 @@ defineProps(['items', 'itemActive'])
     position: absolute;
     left: 0;
     bottom: 0;
-    background-image: linear-gradient(to top, #000 15%, transparent);
+    background-image: linear-gradient(to top, #000 8%, transparent);
 }
 
 .slider .list .item .content {
     position: absolute;
     left: 10%;
     top: 10%;
-    width: 500px;
-    max-width: 80%;
+    width: 550px;
+    max-width: 75%;
     z-index: 1;
     color: #fff;
 }
@@ -61,11 +61,11 @@ defineProps(['items', 'itemActive'])
 .slider .list .item .content p:nth-child(1) {
     text-transform: uppercase;
     letter-spacing: 10px;
-    font-size: 14px;
+    font-size: px;
 }
 
 .slider .list .item .content h2 {
-    font-size: 50px;
+    font-size: 45px;
     margin: 0;
 }
 
@@ -92,11 +92,11 @@ defineProps(['items', 'itemActive'])
 }
 
 .slider .list .item.active h2 {
-    animation-delay: 1s;
+    animation-delay: 0.6s;
 }
 
 .slider .list .item.active p:nth-child(3) {
-    animation-duration: 1.3s;
+    animation-duration: 1.1s;
 }
 
 /* Mobile Responsive */

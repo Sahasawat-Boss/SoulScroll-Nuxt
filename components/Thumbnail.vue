@@ -3,7 +3,7 @@
         <div v-for="(item, index) in items" :key="index" class="item hover:cursor-pointer" :class="{ active: index === itemActive }"
             @click="$emit('slideTo', index)">
             <img :src="item.image" />
-            <div class="content">Name Slider</div>
+            <div class="content">SoulScroll</div>
         </div>
     </div>
 </template>

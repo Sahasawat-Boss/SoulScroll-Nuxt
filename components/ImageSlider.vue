@@ -58,22 +58,22 @@ const items = [
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...'
     },
     {
-        image: '/images/SliderImage/img2.png',
+        image: '/images/SliderImage/img2.jpg',
         title: 'Slider 02',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...'
     },
     {
-        image: '/images/SliderImage/img3.png',
+        image: '/images/SliderImage/img3.jpg',
         title: 'Slider 03',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...'
     },
     {
-        image: '/images/SliderImage/img4.png',
+        image: '/images/SliderImage/img4.jpg',
         title: 'Slider 04',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...'
     },
     {
-        image: '/images/SliderImage/img.png',
+        image: '/images/SliderImage/img5.jpg',
         title: 'Slider 05',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...'
     },

@@ -3,7 +3,7 @@
         <div v-for="(item, index) in items" :key="index" class="item" :class="{ active: index === itemActive }">
             <img :src="item.image" />
             <div class="content">
-                <p>design</p>
+                <p>Fantasy Landscape</p>
                 <h2>{{ item.title }}</h2>
                 <p>{{ item.description }}</p>
             </div>
@@ -44,7 +44,7 @@ defineProps(['items', 'itemActive'])
     position: absolute;
     left: 0;
     bottom: 0;
-    background-image: linear-gradient(to top, #000 40%, transparent);
+    background-image: linear-gradient(to top, #000 15%, transparent);
 }
 
 .slider .list .item .content {

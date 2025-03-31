@@ -1,73 +1,9 @@
-<template>
-    <div>
-        <Nav />
-
-        <div class="slider">
-            <Slider :items="items" :itemActive="itemActive" />
-
-            <div class="arrows">
-                <button @click="prevSlide">
-                    B </button>
-                <button @click="nextSlide"> N</button>
-            </div>
-
-            <Thumbnail :items="items" :itemActive="itemActive" @slideTo="goToSlide" />
-        </div>
-    </div>
-</template>
-
 <script setup>
+import { Items } from '~/data/items'
 import { Nav, Thumbnail, Slider } from '#components'
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 
-const items = [
-    {
-        image: '/images/SliderImage/img1.png',
-        title: 'Slider 01',
-        description: 'Lorem ipsum dolor sit amet ipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum d '
-    },
-    {
-        image: '/images/SliderImage/img2.jpg',
-        title: 'Slider 02',
-        description: 'Lorem ipsum dolor sit amet ipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum d '
-    },
-    {
-        image: '/images/SliderImage/img3.jpg',
-        title: 'Slider 03',
-        description: 'Lorem ipsum dolor sit amet ipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum d '
-    },
-    {
-        image: '/images/SliderImage/img4.jpg',
-        title: 'Slider 04',
-        description: 'Lorem ipsum dolor sit amet ipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum d '
-    },
-    {
-        image: '/images/SliderImage/img5.jpg',
-        title: 'Slider 05',
-        description: 'Lorem ipsum dolor sit amet ipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum d '
-    },
-    {
-        image: '/images/SliderImage/img6.jpg',
-        title: 'Slider 05',
-        description: 'Lorem ipsum dolor sit amet ipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum d '
-    },
-    {
-        image: '/images/SliderImage/img7.jpg',
-        title: 'Slider 05',
-        description: 'Lorem ipsum dolor sit amet ipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum d '
-    },
-    {
-        image: '/images/SliderImage/img8.jpg',
-        title: 'Slider 05',
-        description: 'Lorem ipsum dolor sit amet ipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum d '
-    },
-    {
-        image: '/images/SliderImage/img9.jpg',
-        title: 'Slider 05',
-        description: 'Lorem ipsum dolor sit amet ipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum dipsum dipsum ipsum d '
-    },
-]
-
+const items = Items
 const itemActive = ref(0)
 let interval
 
@@ -110,11 +46,31 @@ onBeforeUnmount(() => {
 })
 </script>
 
+<!--?======== Template ==========================================================-->
+<template>
+    <div>
+        <Nav />
+
+        <div class="slider">
+            <Slider :items="items" :itemActive="itemActive" />
+
+            <div class="arrows">
+                <button @click="prevSlide">
+                    B </button>
+                <button @click="nextSlide"> N</button>
+            </div>
+
+            <Thumbnail :items="items" :itemActive="itemActive" @slideTo="goToSlide" />
+        </div>
+    </div>
+</template>
+<!--?======== Template ==========================================================-->
+
 <style scoped>
 .arrows {
     position: absolute;
     top: 30%;
-    right: 50px;
+    right: 60px;
     z-index: 100;
 }
 

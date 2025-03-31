@@ -34,7 +34,7 @@ defineEmits(['slideTo'])
 
 .thumbnail .item {
     width: 150px;
-    height: 220px;
+    height: 180px;
     filter: brightness(.5);
     transition: .5s;
     flex-shrink: 0;
@@ -63,10 +63,6 @@ defineEmits(['slideTo'])
 
     .slider .list .item .content h2 {
         font-size: 60px;
-    }
-
-    .arrows {
-        top: 10%;
     }
 }
 </style>

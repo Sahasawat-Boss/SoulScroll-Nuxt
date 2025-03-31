@@ -10,7 +10,7 @@ let interval
 const showSlider = () => {
     scrollThumbnailIntoView()
     clearInterval(interval)
-    interval = setInterval(nextSlide, 12000)
+    interval = setInterval(nextSlide, 7500)
 }
 
 const nextSlide = () => {

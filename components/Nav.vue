@@ -10,8 +10,9 @@
         <!-- Desktop Menu -->
         <ul class="hidden md:flex justify-center gap-6 font-semibold text-lg md:text-xl text-white fade-in">
             <li class="hover">Home</li>
-            <li class="hover opacity-60">Blog</li>
-            <li class="hover opacity-60">Info</li>
+            <li class="hover opacity-60">Book 1</li>
+            <li class="hover opacity-60">Book 2</li>
+            <li class="hover opacity-60">About</li>
         </ul>
 
         <!-- External Link -->
@@ -20,7 +21,7 @@
         </a>
 
         <!-- Mobile Menu Icon -->
-        <div class="md:hidden fade-in ">
+        <div class="md:hidden fade-in">
             <button @click="isOpen = !isOpen" class="text-white focus:outline-none hover">
                 <svg v-if="!isOpen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" class="w-6 h-6">
@@ -39,12 +40,13 @@
         class="md:hidden fixed top-[55px] left-0 w-full h-full bg-black/85 text-white text-lg font-semibold z-40">
         <ul class="flex flex-col items-center gap-6 py-6">
             <li class="hover ">Home</li>
-            <li class="hover opacity-60">Blog</li>
-            <li class="hover opacity-60">Info</li>
-            <li>
-                <a href="https://bossbsynth.com/" class="hover italic">bossbsynth.com</a>
-            </li>
+            <li class="hover opacity-60">Book 1</li>
+            <li class="hover opacity-60">Book 2</li>
+            <li class="hover opacity-60">About</li>
         </ul>
+        <div class="flex justify-center items-center mt-7">
+            <a href="https://bossbsynth.com/" class="hover italic">bossbsynth.com</a>
+        </div>
     </div>
 </template>
 

@@ -1,5 +1,5 @@
 
-export const Items = [
+export const SlideItems = [
     {
         image: '/images/SliderImage/img1.jpg',
         title: 'Guardians of the Coast',
@@ -7,8 +7,8 @@ export const Items = [
     },
     {
         image: '/images/SliderImage/img2.jpg',
-        title: 'The Last Refuge',
-        description: 'A massive tower rises from the earth, glowing under the last light of day. Surrounded by ships and scattered cities, this fortress stands as the final safe place in a dying world. Its walls hold ancient secrets, and the skies above whisper of war to come.'
+        title: 'The Titan Slayer',
+        description: 'A lone warrior in ancient armor faces a towering beast on a battlefield of broken weapons. As twilight burns the sky, he stands strong — ready for one final, epic clash to decide the fate of the realm.'
     },
     {
         image: '/images/SliderImage/img3.jpg',

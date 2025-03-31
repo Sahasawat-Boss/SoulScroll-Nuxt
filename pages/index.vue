@@ -1,9 +1,9 @@
 <script setup>
-import { Items } from '~/data/items'
+import { SlideItems } from '~/data/Items'
 import { Nav, Thumbnail, Slider } from '#components'
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 
-const items = Items
+const items = SlideItems
 const itemActive = ref(0)
 let interval
 

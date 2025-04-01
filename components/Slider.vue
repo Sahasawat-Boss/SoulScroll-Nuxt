@@ -2,8 +2,8 @@
     <div class="list">
         <div v-for="(item, index) in items" :key="index" class="item" :class="{ active: index === itemActive }">
             <img :src="item.image" />
-            <div class="content backdrop-blur-xs bg-black/15 p-4 rounded-xl">
-                <p>The Story of</p>
+            <div class="content backdrop-blur-xs bg-black/15 p-3.5 rounded-xl">
+                <p> Ep:{{ item.id }}</p>
                 <h2>{{ item.title }}</h2>
                 <p class="text-lg indent-[1.1rem] tracking-widest">{{ item.description }}</p>
             </div>
@@ -53,7 +53,7 @@ defineProps(['items', 'itemActive'])
     left: 10%;
     top: 10%;
     width: 550px;
-    max-width: 75%;
+    max-width: 70%;
     z-index: 1;
     color: #fff;
 }

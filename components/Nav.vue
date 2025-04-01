@@ -13,24 +13,17 @@
         </a>
 
         <!-- Desktop Menu -->
-        <ul class="hidden md:flex justify-center gap-4 font-semibold text-lg md:text-xl text-white fade-in">
+        <ul class="hidden md:flex justify-center gap-4 font-semibold md:text-lg text-white fade-in">
             <li class="hover">Home</li>
-            <li class="hover opacity-60">Book 1</li>
-            <li class="hover opacity-60">Book 2</li>
+            <li class="hover opacity-60">Book1</li>
+            <li class="hover opacity-60">Book2</li>
             <li class="hover opacity-60">About</li>
         </ul>
 
         <!-- Mobile Menu Icon -->
         <div class="md:hidden fade-in">
-            <button @click="isOpen = !isOpen" class="text-white focus:outline-none hover">
-                <svg v-if="!isOpen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-                <svg v-else xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                    class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+            <button @click="isOpen = !isOpen" class="text-white focus:outline-none hover  hover:text-blue-400 fixed right-5 top-3.5">
+                <LiMenuCircle class="text-[27px]"/>
             </button>
         </div>
     </header>
@@ -40,8 +33,8 @@
         class="md:hidden fixed top-[55px] left-0 w-full h-full bg-black/85 text-white text-lg font-semibold z-40">
         <ul class="flex flex-col items-center gap-6 py-6">
             <li class="hover ">Home</li>
-            <li class="hover opacity-60">Book 1</li>
-            <li class="hover opacity-60">Book 2</li>
+            <li class="hover opacity-60">Book1</li>
+            <li class="hover opacity-60">Book2</li>
             <li class="hover opacity-60">About</li>
         </ul>
         <div class="flex justify-center items-center mt-7">
@@ -54,4 +47,5 @@
 import { ref } from 'vue'
 const isOpen = ref(false)
 
+import { LiMenuCircle } from '@kalimahapps/vue-icons';
 </script>

@@ -5,8 +5,8 @@
 
         <!-- Play/Pause Button -->
         <button @click="toggleAudio"
-            class="fixed top-3.5 left-45 md:left-56 z-[999] bg-white/20 text-white text-sm px-1.5 py-1 rounded hover backdrop-blur-sm">
-            <component :is="isPlaying ?  IconPlay : IconPause" class="w-5 h-5 md:w-6 md:h-6" />
+            class="fixed top-3.5 left-45 md:left-56 z-[999] bg-white/20 text-white text-sm px-1.5 py-1 rounded hover backdrop-blur-sm fade-in">
+            <component :is="isPlaying ? IconPlay : IconPause" class="w-5 h-5 md:w-6 md:h-6" />
         </button>
 
         <!-- Your page content -->
@@ -21,7 +21,7 @@ const audioSrc = '/audio/theme.mp3'
 const bgm = ref(null)
 const isPlaying = ref(false)
 
-const IconPlay = FlFilledMusicNote2 
+const IconPlay = FlFilledMusicNote2
 const IconPause = FlFilledMusicNoteOff2
 
 const toggleAudio = () => {
@@ -47,17 +47,35 @@ const toggleAudio = () => {
 onMounted(() => {
     const tryPlay = () => {
         if (!isPlaying.value && bgm.value) {
+            bgm.value.volume = 0 // start muted
             bgm.value.play().then(() => {
                 isPlaying.value = true
+
+                // slowly fade in audio
+                let vol = 0
+                const fadeIn = setInterval(() => {
+                    vol += 0.5
+                    if (vol >= 1) {
+                        vol = 1
+                        clearInterval(fadeIn)
+                    }
+                    bgm.value.volume = vol
+                }, 200)
             }).catch(() => {
                 console.warn('Autoplay blocked')
             })
         }
+
         window.removeEventListener('click', tryPlay)
+        window.removeEventListener('keydown', tryPlay)
+        window.removeEventListener('touchstart', tryPlay)
     }
 
     window.addEventListener('click', tryPlay)
+    window.addEventListener('keydown', tryPlay)
+    window.addEventListener('touchstart', tryPlay)
 })
+
 
 // Import Icon
 import { FlFilledMusicNoteOff2, FlFilledMusicNote2 } from '@kalimahapps/vue-icons';

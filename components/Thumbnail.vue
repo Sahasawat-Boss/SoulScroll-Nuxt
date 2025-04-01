@@ -18,7 +18,10 @@
             <div v-for="(item, index) in items" :key="index" class="item hover:cursor-pointer"
                 :class="{ active: index === itemActive }" @click="$emit('slideTo', index)">
                 <img :src="item.image" />
-                <div class="content">SoulScroll</div>
+                <div class="absolute bottom-2 left-2 right-2 md:text-lg text-white text-center pointer-events-none">
+                    Ep: {{ item.id }}
+                </div>
+
             </div>
         </div>
     </div>
@@ -82,15 +85,6 @@ defineEmits(['slideTo', 'prev', 'next'])
     filter: brightness(1.5);
 }
 
-.thumbnail .item .content {
-    position: absolute;
-    inset: auto 10px 10px 10px;
-    font-size: 0.75rem;
-    color: white;
-    text-align: center;
-    pointer-events: none;
-}
-
 /* Mobile Responsive Adjustments */
 @media screen and (max-width: 768px) {
     .thumbnail {
@@ -118,10 +112,6 @@ defineEmits(['slideTo', 'prev', 'next'])
     .thumbnail .item {
         width: 100px;
         height: 150px;
-    }
-
-    .thumbnail .item .content {
-        font-size: 0.7rem;
     }
 }
 </style>

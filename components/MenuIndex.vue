@@ -2,7 +2,7 @@
     <div
         class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center space-y-6 fade-in">
         <h1 class="text-4xl md:text-5xl font-bold tracking-wide fade-in-up">SoulScroll</h1>
-        <p class="w-sm px-12 md:w-full md:text-lg opacity-85 fade-in-up tracking-wide">
+        <p class="w-sm px-12 md:w-full md:text-lg opacity-85 fade-in-up2 tracking-wide">
             A journey through shadows, myth, and legend
         </p>
 

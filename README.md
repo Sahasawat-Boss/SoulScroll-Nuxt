@@ -4,7 +4,7 @@
 
 [🌐 Live Demo »](https://soulscroll-bossbsynth.netlify.app/)  
 
-![Screenshot 2025-04-01 135152](https://github.com/user-attachments/assets/6d62d086-a913-4c98-95a6-f21229b8d73b)
+![Screenshot 2025-04-01 142715](https://github.com/user-attachments/assets/8709ae4f-2bca-4d7f-95f0-069e69a56248)
 
 
 ## ✨ Features

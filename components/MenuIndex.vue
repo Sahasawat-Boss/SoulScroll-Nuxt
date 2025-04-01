@@ -10,10 +10,10 @@
             A journey through shadows, myth, and legend
         </p>
 
-        <div class="flex flex-col gap-4 mt-8">
+        <div class="flex flex-col gap-5.5 mt-8">
             <div class="relative flex fade-in-right1 float-y hover2">
                 <NuxtLink to="/book1" class="menu-btn2">Book 1</NuxtLink>
-                <span class="absolute -right-3 -bottom-1 float-x text-2xl text-blue-400">
+                <span class="absolute -right-4 -bottom-1 float-x text-2xl text-blue-400">
                     <LuSword />
                 </span>
             </div>
@@ -25,7 +25,7 @@
             </div>
             <div class="relative flex fade-in-right2 hover2">
                 <NuxtLink to="/about" class="menu-btn">About</NuxtLink>
-                <span class="absolute -right-1 -bottom-1 text-xl text-gray-400/80">
+                <span class="absolute -right-1 -bottom-1 text-xl text-gray-300/60">
                     <FlQuestionCircle />
                 </span>
             </div>

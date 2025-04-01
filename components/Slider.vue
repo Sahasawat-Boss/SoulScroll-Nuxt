@@ -22,8 +22,8 @@
 
         <!-- Modal -->
         <div v-if="showModal" class="fixed inset-0 z-50 bg-black/80 flex items-center justify-center">
-            <div class="bg-white text-black rounded-lg w-[90vw] md:w-lg h-[460px] overflow-y-auto py-8 px-8 relative fade-in">
-                <h3 class="text-3xl font-bold mb-4">
+            <div class="bg-white text-black rounded-lg w-[90vw] md:w-xl h-[500px] overflow-y-auto py-8 px-8 relative fade-in">
+                <h3 class="text-2xl md:text-3xl font-bold mb-4">
                     Chapter {{ selectedChapter.id }}: {{ selectedChapter.title }}
                 </h3>
 
@@ -38,7 +38,7 @@
 
                 <div class="flex justify-center">
                     <button @click="closeModal"
-                        class="mt-2 px-4 py-2 bg-black text-white rounded hover:bg-gray-900 transition hover">
+                        class="mb-3  px-4 py-2 bg-black text-white rounded hover:bg-gray-900 transition hover">
                         Close
                     </button>
                 </div>

@@ -1,65 +1,30 @@
-<script setup>
-import { SlideItems } from '~/data/Items'
-import { Nav, Thumbnail, Slider } from '#components'
-import { ref, onMounted, onBeforeUnmount } from 'vue'
-
-const items = SlideItems
-const itemActive = ref(0)
-let interval
-
-const showSlider = () => {
-    scrollThumbnailIntoView()
-    clearInterval(interval)
-    interval = setInterval(nextSlide, 7500)
-}
-
-const nextSlide = () => {
-    itemActive.value = (itemActive.value + 1) % items.length
-    showSlider()
-}
-
-const prevSlide = () => {
-    itemActive.value = (itemActive.value - 1 + items.length) % items.length
-    showSlider()
-}
-
-const goToSlide = (index) => {
-    itemActive.value = index
-    showSlider()
-}
-
-const scrollThumbnailIntoView = () => {
-    const activeThumbnail = document.querySelector('.thumbnail .item.active')
-    if (activeThumbnail) {
-        const rect = activeThumbnail.getBoundingClientRect()
-        if (rect.left < 0 || rect.right > window.innerWidth) {
-            activeThumbnail.scrollIntoView({ behavior: 'smooth', inline: 'nearest' })
-        }
-    }
-}
-
-onMounted(() => {
-    interval = setInterval(nextSlide, 5000)
-})
-onBeforeUnmount(() => {
-    clearInterval(interval)
-})
-</script>
-
-<!--?======== Template ==========================================================-->
 <template>
-    <div>
+    <div class="relative h-screen w-full bg-cover bg-center" style="background-image: url('/images/menu/knight0.png')">
+        
         <Nav />
 
-        <div class="slider">
-            <Slider :items="items" :itemActive="itemActive" />
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/10 backdrop-blur-xs"></div>
 
-            <Thumbnail :items="items" :itemActive="itemActive" @slideTo="goToSlide" @prev="prevSlide"
-                @next="nextSlide" 
-                />
+        <!-- Centered Menu -->
+        <div
+            class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center space-y-6 fade-in">
+            <h1 class="text-4xl md:text-6xl font-bold tracking-wide font-serif">SoulScroll</h1>
+            <p class="text-sm md:text-lg italic opacity-70">A journey through shadows, myth, and legend</p>
+
+            <div class="flex flex-col gap-4 mt-8">
+                <NuxtLink to="/book1" class="menu-btn">Book 1</NuxtLink>
+                <NuxtLink to="/book2" class="menu-btn">Book 2</NuxtLink>
+                <NuxtLink to="/about" class="menu-btn">About</NuxtLink>
+            </div>
         </div>
     </div>
 </template>
-<!--?======== Template ==========================================================-->
 
-<style scoped></style>
+<script setup>
+import { Nav } from "#components";
+</script>
+
+<style scoped>
+
+</style>

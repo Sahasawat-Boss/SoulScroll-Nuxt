@@ -79,7 +79,7 @@ body {
 
 /* ====== Utility Classes ====== */
 .fade-in {
-    animation: fadeIn 0.8s ease-out forwards;
+    animation: fadeIn 1.2s ease-out forwards;
 }
 
 .fade-in-up {

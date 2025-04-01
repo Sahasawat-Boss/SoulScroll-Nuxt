@@ -1,13 +1,20 @@
 <template>
     <div class="thumbnail-container">
         <!-- Arrows Above -->
-        <div class="arrows fade-in-up">
-            <button @click="$emit('prev')" title="Previous" class="hover">‹</button>
-            <button @click="$emit('next')" title="Next" class="hover">›</button>
+        <div class="flex gap-3 justify-center w-full md:scale-125 mb-1.5 md:mb-5 fade-in-up">
+            <button @click="$emit('prev')" title="Previous"
+                class="w-8 h-8  rounded bg-white/30 text-white text-xl font-mono hover:bg-white hover:text-black hover">
+                ‹
+            </button>
+            <button @click="$emit('next')" title="Next"
+                class="w-8 h-8 rounded bg-white/30 text-white text-xl font-mono hover:bg-white hover:text-black hover">
+                ›
+            </button>
         </div>
 
+
         <!-- Thumbnail List -->
-        <div class="thumbnail fade-in">
+        <div class="thumbnail fade-in-up">
             <div v-for="(item, index) in items" :key="index" class="item hover:cursor-pointer"
                 :class="{ active: index === itemActive }" @click="$emit('slideTo', index)">
                 <img :src="item.image" />
@@ -25,40 +32,15 @@ defineEmits(['slideTo', 'prev', 'next'])
 <style scoped>
 .thumbnail-container {
     position: absolute;
-    bottom: 20px;
+    bottom: 30px;
     width: 100%;
     z-index: 11;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     padding: 0 1rem;
     box-sizing: border-box;
-}
-
-/* Arrows */
-.arrows {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    width: 100%;
-}
-
-.arrows button {
-    background-color: #eee5;
-    border: none;
-    font-family: monospace;
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    font-size: x-large;
-    color: #eee;
-    transition: 0.5s;
-}
-
-.arrows button:hover {
-    background-color: #eee;
-    color: black;
 }
 
 /* Thumbnail container */
@@ -113,22 +95,12 @@ defineEmits(['slideTo', 'prev', 'next'])
 @media screen and (max-width: 768px) {
     .thumbnail {
         justify-content: flex-start;
-        height: 200px;
+        height: 220px;
     }
 
     .thumbnail .item {
         width: 110px;
         height: 160px;
-    }
-
-    .arrows {
-        gap: 8px;
-    }
-
-    .arrows button {
-        width: 35px;
-        height: 35px;
-        font-size: large;
     }
 }
 

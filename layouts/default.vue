@@ -5,7 +5,7 @@
 
         <!-- Play/Pause Button -->
         <button @click="toggleAudio"
-            class="fixed top-3.5 left-45 md:left-56 z-[999] bg-white/20 text-white text-sm px-1.5 py-1 rounded hover backdrop-blur-sm fade-in">
+            class="fixed top-3.5 left-46 md:left-58 z-[999] bg-white/20 text-white text-sm px-1.5 py-1 rounded hover backdrop-blur-sm fade-in">
             <component :is="isPlaying ? IconPlay : IconPause" class="w-5 h-5 md:w-6 md:h-6" />
         </button>
 

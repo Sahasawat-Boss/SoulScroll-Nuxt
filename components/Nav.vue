@@ -7,23 +7,23 @@
         </NuxtLink>
 
         <!-- External Link -->
-        <a href="https://bossbsynth.com/" class="hidden text-sm md:block text-white hover italic fade-in">
+        <a href="https://bossbsynth.com/" class="hidden text-sm md:block text-white hover italic mt-1 fade-in">
             bossbsynth.com
         </a>
 
         <!-- Desktop Menu -->
-        <ul class="hidden md:flex justify-center gap-4 font-semibold md:text-lg text-white fade-in">
+        <ul class="hidden md:flex justify-center gap-5 lg:gap-10 font-semibold md:text-lg text-white fade-in">
             <li>
                 <NuxtLink to="/" class="hover">Home</NuxtLink>
             </li>
             <li>
-                <NuxtLink to="/book1" class="hover opacity-60">Book1</NuxtLink>
+                <NuxtLink to="/book1" class="hover">Book1</NuxtLink>
             </li>
             <li>
-                <NuxtLink to="/book2" class="hover opacity-60">Book2</NuxtLink>
+                <NuxtLink to="/book2" class="hover">Book2</NuxtLink>
             </li>
             <li>
-                <NuxtLink to="/about" class="hover opacity-60">About</NuxtLink>
+                <NuxtLink to="/about" class="hover">About</NuxtLink>
             </li>
         </ul>
 
@@ -66,3 +66,7 @@ const isOpen = ref(false)
 
 import { LiMenuCircle } from '@kalimahapps/vue-icons';
 </script>
+
+<style scoped>
+
+</style>

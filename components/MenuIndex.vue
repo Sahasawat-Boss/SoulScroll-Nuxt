@@ -30,6 +30,13 @@
                 </span>
             </div>
         </div>
+
+        <!-- bossbsynth.com - External Link -->
+        <a href="https://bossbsynth.com/"
+            class="fixed bottom-8 text-xs md:text-sm text-white/65 hover italic mt-1 fade-in"
+            style="text-shadow: 2px 3px 7px rgba(0,0,0,0.6);">
+            bossbsynth.com
+        </a>
     </div>
 </template>
 

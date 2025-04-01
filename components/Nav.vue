@@ -14,16 +14,16 @@
         <!-- Desktop Menu -->
         <ul class="hidden md:flex justify-center gap-5 lg:gap-10 font-semibold md:text-lg text-white fade-in">
             <li>
-                <NuxtLink to="/" class="hover">Home</NuxtLink>
+                <NuxtLink to="/" class="hover:underline underline-offset-4">Home</NuxtLink>
             </li>
             <li>
-                <NuxtLink to="/book1" class="hover">Book1</NuxtLink>
+                <NuxtLink to="/book1" class="hover:underline underline-offset-4">Book1</NuxtLink>
             </li>
             <li>
-                <NuxtLink to="/book2" class="hover">Book2</NuxtLink>
+                <NuxtLink to="/book2" class="hover:underline underline-offset-4">Book2</NuxtLink>
             </li>
             <li>
-                <NuxtLink to="/about" class="hover">About</NuxtLink>
+                <NuxtLink to="/about" class="hover:underline underline-offset-4">About</NuxtLink>
             </li>
         </ul>
 
@@ -38,23 +38,23 @@
 
     <!-- Mobile Menu -->
     <div v-if="isOpen"
-        class="md:hidden fixed top-[55px] left-0 w-full h-full bg-black/85 text-white text-lg font-semibold z-40">
+        class="md:hidden fixed top-[55px] left-0 w-full h-[60vh] bg-black text-white text-2xl z-50 py-10 fade-in-right">
         <ul class="flex flex-col items-center gap-6 py-6">
             <li>
-                <NuxtLink to="/" class="hover">Home</NuxtLink>
+                <NuxtLink to="/" class="hover:cursor-pointer hover:underline underline-offset-4">Home</NuxtLink>
+            </li> 
+            <li> 
+                <NuxtLink to="/book1" class="hover:cursor-pointer hover:underline underline-offset-4">Book1</NuxtLink>
             </li>
-            <li>
-                <NuxtLink to="/book1" class="hover opacity-60">Book1</NuxtLink>
+            <li> 
+                <NuxtLink to="/book2" class="hover:cursor-pointer hover:underline underline-offset-4">Book2</NuxtLink>
             </li>
-            <li>
-                <NuxtLink to="/book2" class="hover opacity-60">Book2</NuxtLink>
-            </li>
-            <li>
-                <NuxtLink to="/about" class="hover opacity-60">About</NuxtLink>
+            <li> 
+                <NuxtLink to="/about" class="hover:cursor-pointer hover:underline underline-offset-4">About</NuxtLink>
             </li>
         </ul>
         <div class="flex justify-center items-center mt-7">
-            <a href="https://bossbsynth.com/" class="hover italic">bossbsynth.com</a>
+            <a href="https://bossbsynth.com/" class="hover:cursor-pointer italic hover:underline underline-offset-4">bossbsynth.com</a>
         </div>
     </div>
 </template>

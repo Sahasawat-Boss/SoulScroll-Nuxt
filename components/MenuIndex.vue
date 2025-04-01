@@ -6,24 +6,25 @@
             SoulScroll
         </h1>
 
-        <p class="w-sm px-12 md:w-full md:text-lg opacity-85 fade-in-up2 tracking-wide">
+        <p class="w-sm px-12 md:w-full md:text-lg opacity-85 fade-in-up2 tracking-wide"
+        style="text-shadow: 2px 3px 6px rgba(0,0,0,0.4);">
             A journey through shadows, myth, and legend
         </p>
 
         <div class="flex flex-col gap-5.5 mt-8">
-            <div class="relative flex fade-in-right1 float-y hover2">
+            <div class="relative flex fade-in-right1 float-y hover2 shadow-lg">
                 <NuxtLink to="/book1" class="menu-btn2">Book 1</NuxtLink>
-                <span class="absolute -right-4 -bottom-1 float-x text-2xl text-blue-400">
+                <span class="absolute -right-4 -bottom-1 float-x text-2lg text-blue-400">
                     <LuSword />
                 </span>
             </div>
-            <div class="relative flex fade-in-right2 hover2">
+            <div class="relative flex fade-in-right2 hover2 shadow-lg">
                 <NuxtLink to="/book2" class="menu-btn">Book 2</NuxtLink>
-                <span class="absolute -right-1 -bottom-1 text-xl text-yellow-400/30">
+                <span class="absolute -right-1 -bottom-1 text-lg text-yellow-400/30">
                     <BxSolidLock />
                 </span>
             </div>
-            <div class="relative flex fade-in-right2 hover2">
+            <div class="relative flex fade-in-right2 hover2 shadow-xl">
                 <NuxtLink to="/about" class="menu-btn">About</NuxtLink>
                 <span class="absolute -right-1 -bottom-1 text-xl text-gray-300/60">
                     <FlQuestionCircle />

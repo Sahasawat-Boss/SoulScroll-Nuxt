@@ -3,7 +3,7 @@
         <Nav />
 
         <!-- Overlay -->
-        <div class="absolute inset-0 bg-black/10 backdrop-blur-xs"></div>
+        <div class="absolute inset-0 bg-black/8 backdrop-blur-[5px]"></div>
 
         <!-- Centered Menu -->
         <MenuIndex />

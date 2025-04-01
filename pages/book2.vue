@@ -3,7 +3,7 @@
     <div class="relative h-screen w-full bg-cover bg-center text-white"
         style="background-image: url('/images/book2/img9.jpg')">
         <!-- Overlay -->
-        <div class="absolute inset-0 bg-black/55 backdrop-blur-sm"></div>
+        <div class="absolute inset-0 bg-black/35 backdrop-blur-[6px]"></div>
 
         <!-- Centered content -->
         <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 fade-in">

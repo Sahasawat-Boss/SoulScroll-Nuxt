@@ -5,7 +5,7 @@
         <Nav />
 
         <!-- Overlay -->
-        <div class="absolute inset-0 bg-black/55 backdrop-blur-sm"></div>
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-[5.5px]"></div>
 
         <!-- Content -->
         <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-6 fade-in">

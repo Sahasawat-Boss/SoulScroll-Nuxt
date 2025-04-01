@@ -53,11 +53,11 @@
             </li>
             <li>
                 <NuxtLink to="/book1" class="hover:cursor-pointer hover:underline underline-offset-4"
-                    active-class="text-blue-400">Book1</NuxtLink>
+                    active-class="text-blue-400">Book 1</NuxtLink>
             </li>
             <li>
                 <NuxtLink to="/book2" class="hover:cursor-pointer hover:underline underline-offset-4"
-                    active-class="text-blue-400">Book2</NuxtLink>
+                    active-class="text-blue-400">Book 2</NuxtLink>
             </li>
             <li>
                 <NuxtLink to="/about" class="hover:cursor-pointer hover:underline underline-offset-4"

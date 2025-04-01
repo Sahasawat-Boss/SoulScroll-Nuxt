@@ -11,9 +11,9 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'SoulScroll - Fantasy Landscape Gallery',
+      title: 'SoulScroll',
       meta: [
-        { name: 'description', content: 'A Nuxt-powered slider showcasing stunning fantasy landscape art and cinematic views.' },
+        { name: 'description', content: 'SoulScroll is an immersive Nuxt-powered slider that transports you through breathtaking fantasy landscapes and cinematic realms, one scroll at a time.' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
         { charset: 'utf-8' }
       ],

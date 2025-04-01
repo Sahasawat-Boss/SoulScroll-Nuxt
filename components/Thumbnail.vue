@@ -6,6 +6,7 @@
                 class="w-7.5 h-7.5  rounded bg-white/30 text-white text-xl font-mono hover:bg-white hover:text-black hover">
                 ‹
             </button>
+            <h2 class="mt-1.5 text-sm"> Select Chapter </h2>
             <button @click="$emit('next')" title="Next"
                 class="w-7.5 h-7.5 rounded bg-white/30 text-white text-xl font-mono hover:bg-white hover:text-black hover">
                 ›
@@ -13,12 +14,14 @@
         </div>
 
 
+
         <!-- Thumbnail List -->
         <div class="thumbnail fade-in-up w-[100%]">
             <div v-for="(item, index) in items" :key="index" class="item hover:cursor-pointer"
                 :class="{ active: index === itemActive }" @click="$emit('slideTo', index)">
                 <img :src="item.image" />
-                <div class="absolute bottom-2 left-2 right-2 md:text-lg text-white text-center pointer-events-none">
+                <div
+                    class="absolute bottom-2 left-2 right-2 text-sm md:text-md text-white text-center pointer-events-none">
                     Chapter: {{ item.id }}
                 </div>
 

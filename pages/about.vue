@@ -16,7 +16,7 @@
                 battles.
                 Explore it like a living book, chapter by chapter.
             </p>
-            <NuxtLink to="/" class="bg-white/20 px-5 py-2 rounded text-white text-lg hover:bg-white/40 transition">
+            <NuxtLink to="/" class="bg-white/20 px-5 py-2 rounded text-white text-lg hover:bg-white/40  fade-in-up2">
                 ⟵ Back to Menu
             </NuxtLink>
         </div>

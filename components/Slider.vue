@@ -22,7 +22,7 @@
 
         <!-- Modal -->
         <div v-if="showModal" class="fixed inset-0 z-50 bg-black/80 flex items-center justify-center">
-            <div class="bg-white text-black rounded-lg w-[90vw] md:w-lg h-[400px] overflow-y-auto py-8 px-8 relative">
+            <div class="bg-white text-black rounded-lg w-[90vw] md:w-lg h-[460px] overflow-y-auto py-8 px-8 relative fade-in">
                 <h3 class="text-3xl font-bold mb-4">
                     Chapter {{ selectedChapter.id }}: {{ selectedChapter.title }}
                 </h3>

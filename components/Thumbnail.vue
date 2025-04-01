@@ -2,6 +2,7 @@
     <div class="thumbnail-container">
         <!-- Arrows Above -->
         <div class="flex gap-3 justify-center w-full md:scale-110 mb-4 fade-in-up">
+
             <button @click="$emit('prev')" title="Previous"
                 class="w-7.5 h-7.5  rounded bg-white/30 text-white text-xl font-mono hover:bg-white hover:text-black hover">
                 ‹
@@ -11,6 +12,7 @@
                 class="w-7.5 h-7.5 rounded bg-white/30 text-white text-xl font-mono hover:bg-white hover:text-black hover">
                 ›
             </button>
+            
         </div>
 
 

@@ -2,36 +2,32 @@
     <div class="list">
         <div v-for="(item, index) in items" :key="index" class="item" :class="{ active: index === itemActive }">
             <img :src="item.image" />
-            <div class="content backdrop-blur-xs bg-black/14 py-2 px-4 rounded-3xl">
+            <div class="content backdrop-blur-[2.5px] bg-black/14 py-2 px-4 rounded-3xl">
 
-                <p class="text-sm text-white/65 tracking-widest"
-                style="text-shadow: 2px 3.5px 6px rgba(0,0,0,0.9);">
+                <p class="text-sm text-white/70 tracking-widest" style="text-shadow: 2px 3.5px 6px rgba(0,0,0,0.9);">
                     Chapter: {{ item.id }}
                 </p>
 
-                <h2 class="text-4xl py-2.5  tracking-wider"
-                style="text-shadow: 2px 3.5px 10px rgba(0,0,0,0.7);"
-                >{{ item.title }}</h2>
+                <h2 class="text-4xl py-2.5  tracking-wider" style="text-shadow: 2px 3.5px 10px rgba(0,0,0,0.7);">{{
+                    item.title }}</h2>
 
-                <p class="text-lg indent-[1.1rem] tracking-wider"
-                style="text-shadow: 2px 3.5px 10px rgba(0,0,0,0.7);"
-                >
+                <p class="text-lg indent-[1.1rem] tracking-wider" style="text-shadow: 2px 3.5px 10px rgba(0,0,0,0.7);">
                     {{ item.description }}
                 </p>
 
                 <!-- Only animate the active button -->
                 <button v-if="index === itemActive" ref="readButton"
-                    class="read-btn-animate mt-3 ml-2 px-3 py-2 text-white text-sm md:text-base font-semibold bg-white/10 hover:bg-white/25 backdrop-blur-sm rounded-lg transition duration-300 hover  tracking-wider"
-                    @click="openModal(item)"
-                    style="text-shadow: 2px 3px 8px rgba(0,0,0,0.2);">
+                    class="read-btn-animate mt-3 ml-2 px-3 py-2 text-white text-sm md:text-base font-semibold bg-white/16 hover:bg-white/25 backdrop-blur-sm rounded-lg transition duration-300 hover  tracking-wider"
+                    @click="openModal(item)" style="text-shadow: 2px 3px 8px rgba(0,0,0,0.2);">
                     📖 Read Chapter
                 </button>
             </div>
         </div>
 
         <!-- Modal -->
-        <div v-if="showModal" class="fixed inset-0 z-50 bg-black/80 flex items-center justify-center">
-            <div class="bg-white text-black rounded-lg w-[90vw] md:w-xl h-[500px] overflow-y-auto py-8 px-8 relative fade-in">
+        <div v-if="showModal" class="fixed inset-0 z-50 bg-black/85 flex items-center justify-center">
+            <div
+                class="bg-white text-black rounded-lg w-[90vw] md:w-xl h-[500px] overflow-y-auto py-8 px-8 relative fade-in">
                 <h3 class="text-2xl md:text-3xl font-bold mb-4">
                     Chapter {{ selectedChapter.id }}: {{ selectedChapter.title }}
                 </h3>
@@ -53,6 +49,7 @@
                 </div>
             </div>
         </div>
+        <!-- Modal -->
     </div>
 </template>
 
@@ -122,7 +119,7 @@ watch(() => props.itemActive, async () => {
     position: absolute;
     left: 0;
     bottom: 0;
-    background-image: linear-gradient(to top, #000 5%, transparent);
+    background-image: linear-gradient(to top, #070707 5%, transparent);
 }
 
 .slider .list .item .content {

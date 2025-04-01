@@ -2,7 +2,7 @@
     <div class="list">
         <div v-for="(item, index) in items" :key="index" class="item" :class="{ active: index === itemActive }">
             <img :src="item.image" />
-            <div class="content backdrop-blur-xs bg-black/15 p-3.5 rounded-xl">
+            <div class="content backdrop-blur-xs bg-black/14 py-2 px-4 rounded-3xl">
 
                 <p class="text-sm text-white/65 tracking-widest"
                 style="text-shadow: 2px 3.5px 6px rgba(0,0,0,0.9);">
@@ -41,7 +41,7 @@
                 </p>
 
                 <button @click="closeModal"
-                    class="absolute -top-1 right-3 text-black hover:text-red-500 text-5xl font-semibold">
+                    class="absolute -top-1 right-3 text-black hover:text-red-500 text-5xl font-semibold hover:cursor-pointer">
                     &times;
                 </button>
 
@@ -106,7 +106,7 @@ watch(() => props.itemActive, async () => {
     inset: 0;
     overflow: hidden;
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.6s;
 }
 
 .slider .list .item img {
@@ -122,7 +122,7 @@ watch(() => props.itemActive, async () => {
     position: absolute;
     left: 0;
     bottom: 0;
-    background-image: linear-gradient(to top, #000 8%, transparent);
+    background-image: linear-gradient(to top, #000 5%, transparent);
 }
 
 .slider .list .item .content {
@@ -168,8 +168,8 @@ watch(() => props.itemActive, async () => {
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
     .slider .list .item .content {
-        left: 5%;
-        top: 15%;
+        left: 4.5%;
+        top: 14%;
         width: 90%;
     }
 

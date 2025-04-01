@@ -3,20 +3,25 @@
         <div v-for="(item, index) in items" :key="index" class="item" :class="{ active: index === itemActive }">
             <img :src="item.image" />
             <div class="content backdrop-blur-xs bg-black/15 p-3.5 rounded-xl">
-                <p class="text-xs text-white/55"
+
+                <p class="text-sm text-white/65 tracking-widest"
                 style="text-shadow: 2px 3.5px 6px rgba(0,0,0,0.9);">
                     Chapter: {{ item.id }}
                 </p>
-                <h2 class="text-4xl py-2.5"
+
+                <h2 class="text-4xl py-2.5  tracking-wider"
                 style="text-shadow: 2px 3.5px 10px rgba(0,0,0,0.7);"
                 >{{ item.title }}</h2>
-                <p class="text-lg indent-[1.1rem] tracking-widest">
+
+                <p class="text-lg indent-[1.1rem] tracking-wider"
+                style="text-shadow: 2px 3.5px 10px rgba(0,0,0,0.7);"
+                >
                     {{ item.description }}
                 </p>
 
                 <!-- Only animate the active button -->
                 <button v-if="index === itemActive" ref="readButton"
-                    class="read-btn-animate mt-4 px-5 py-2.5 text-white text-sm md:text-base font-semibold bg-white/10 hover:bg-white/25 backdrop-blur-sm rounded-lg transition duration-300 hover"
+                    class="read-btn-animate mt-3 ml-2 px-3 py-2 text-white text-sm md:text-base font-semibold bg-white/10 hover:bg-white/25 backdrop-blur-sm rounded-lg transition duration-300 hover  tracking-wider"
                     @click="openModal(item)"
                     style="text-shadow: 2px 3px 8px rgba(0,0,0,0.2);">
                     📖 Read Chapter
@@ -153,11 +158,11 @@ watch(() => props.itemActive, async () => {
 }
 
 .slider .list .item.active h2 {
-    animation-delay: 0.6s;
+    animation-delay: 0.35s;
 }
 
 .slider .list .item.active p:nth-child(3) {
-    animation-duration: 1.1s;
+    animation-duration: 0.65s;
 }
 
 /* Mobile Responsive */
@@ -169,12 +174,7 @@ watch(() => props.itemActive, async () => {
     }
 
     .slider .list .item .content h2 {
-        font-size: 28px;
-    }
-
-    .slider .list .item .content p:nth-child(1) {
-        font-size: 12px;
-        letter-spacing: 4px;
+        font-size: 26px;
     }
 
     .slider .list .item .content p:nth-child(3) {
@@ -213,8 +213,8 @@ watch(() => props.itemActive, async () => {
 }
 
 .read-btn-animate {
-    animation: fadeInUp 0.6s ease-out forwards;
-    animation-delay: 0.6s;
+    animation: fadeInUp 0.65s ease-out forwards;
+    animation-delay: 0.65s;
     opacity: 0;
     animation-fill-mode: both;
 }

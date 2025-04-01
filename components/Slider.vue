@@ -3,8 +3,8 @@
         <div v-for="(item, index) in items" :key="index" class="item" :class="{ active: index === itemActive }">
             <img :src="item.image" />
             <div class="content backdrop-blur-xs bg-black/15 p-3.5 rounded-xl">
-                <p> Ep:{{ item.id }}</p>
-                <h2>{{ item.title }}</h2>
+                <p class="text-xs font-semibold text-white/50">Chapter:{{ item.id }}</p>
+                <h2 class="text-4xl py-2.5">{{ item.title }}</h2>
                 <p class="text-lg indent-[1.1rem] tracking-widest">{{ item.description }}</p>
             </div>
 
@@ -56,17 +56,6 @@ defineProps(['items', 'itemActive'])
     max-width: 70%;
     z-index: 1;
     color: #fff;
-}
-
-.slider .list .item .content p:nth-child(1) {
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    font-size: px;
-}
-
-.slider .list .item .content h2 {
-    font-size: 45px;
-    margin: 0;
 }
 
 .slider .list .item.active {

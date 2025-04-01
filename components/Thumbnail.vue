@@ -19,7 +19,7 @@
                 :class="{ active: index === itemActive }" @click="$emit('slideTo', index)">
                 <img :src="item.image" />
                 <div class="absolute bottom-2 left-2 right-2 md:text-lg text-white text-center pointer-events-none">
-                    Ep: {{ item.id }}
+                    Chapter: {{ item.id }}
                 </div>
 
             </div>

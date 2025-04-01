@@ -4,13 +4,13 @@ export const SlideItems = [
         id: 1,
         image: '/images/book1/img1.jpg',
         title: 'Guardians of the Coast',
-        description: 'Giant statues stand on rocky cliffs, guarding a misty city by the sea. A lone traveler in red gazes out, as if calling to ancient spirits. It feels like the beginning of a forgotten legend.'
+        description: 'Huge statues watch over a foggy city by the sea. A traveler in red stands before them, like they’re calling out to something old and powerful — the start of a story long forgotten.'
     },
     {
         id: 2,
         image: '/images/book1/img2.jpg',
         title: 'The Titan Slayer',
-        description: 'A lone warrior in ancient armor faces a towering beast on a battlefield of broken weapons. As twilight burns the sky, he stands strong — ready for one final, epic clash to decide the fate of the realm.'
+        description: 'A lone warrior in old armor stands tall against a massive beast. With the sky glowing behind him, he is ready for one last fight to decide everything.'
     },
     {
         id: 3,
@@ -22,32 +22,32 @@ export const SlideItems = [
         id: 4,
         image: '/images/book1/img5.jpg',
         title: 'Bound Titan',
-        description: '"Chained between cliffs, a forgotten giant looms over stormy seas. Lightning strikes as a lone warrior watches. No one recalls how the titan was bound—only that if freed, the world will change forever.'
+        description: 'Chained between cliffs, a giant waits above stormy seas. No one knows how it got there — but if those chains break, everything could change.'
     },
-    
+
     {
         id: 5,
         image: '/images/book1/img4.jpg',
         title: 'The Last Stand',
-        description: 'In the heart of a frozen forest, a lone knight faces a massive dragon. With a flaming sword and shield, he stands firm. This battle is not just for survival - it is for legend.'
+        description: 'Deep in a frozen forest, a lone knight faces a huge dragon. Sword blazing, shield up — he is not just fighting to survive, but fighting to be remembered.'
     },
 
     {
         id: 6,
         image: '/images/book1/img8.jpg',
-        title: 'Echoes of the Highlands',
-        description: 'Chained between cliffs, a forgotten giant looms over stormy seas. Lightning strikes as a lone warrior watches. No one recalls how the titan was bound—only that if freed, the world will change forever.'
+        title: 'The Ember Forge',
+        description: 'In the heart of the mountain, weapons are forged and warriors are trained — preparing for the epic battle to come.'
     },
     {
         id: 7,
         image: '/images/book1/img6.jpg',
-        title: 'Valley of the Fallen',
-        description: 'In a dark canyon, undead legions charge with bone giants and winged beasts. The ground shakes as the forgotten rise for one final battle.'
+        title: 'Dusk of Reckoning',
+        description: 'At sunset, a lone warrior joins the human army. With courage and heart, they fight side by side to stop the undead and protect what is left of their world.'
     },
     {
         id: 8,
         image: '/images/book1/img7.jpg',
         title: 'Embers of Farewell',
-        description: 'In a snowy field, warriors stand in silence as a great pyre blazes. Flames rise to the sky, honoring the fallen with a final, sacred goodbye.'
+        description: 'In a quiet snowy field, warriors gather around a blazing pyre. It is their way of saying one last goodbye to the ones they lost.'
     }
 ]

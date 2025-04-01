@@ -2,17 +2,20 @@
     <header
         class="z-50 px-4.5 md:px-6 py-3 fixed top-0 left-0 w-full backdrop-blur-xs bg-black/20 border-b border-white/15 shadow-md flex items-center justify-between">
         <!-- Logo -->
-        <NuxtLink to="/" class="flex text-2xl md:text-3xl font-bold text-white hover italic fade-in">
+        <NuxtLink to="/" class="flex text-2xl md:text-3xl font-bold text-white hover italic fade-in"
+        style="text-shadow: 2px 3px 6px rgba(0,0,0,0.4);">
             SoulScroll
         </NuxtLink>
 
         <!-- External Link -->
-        <a href="https://bossbsynth.com/" class="hidden text-sm md:block text-white hover italic mt-1 fade-in">
+        <a href="https://bossbsynth.com/" class="hidden text-sm md:block text-white hover italic mt-1 fade-in"
+        style="text-shadow: 2px 3px 7px rgba(0,0,0,0.6);">
             bossbsynth.com
         </a>
 
         <!-- Desktop Menu -->
-        <ul class="hidden md:flex justify-center gap-5 lg:gap-10 font-semibold md:text-lg text-white fade-in">
+        <ul class="hidden md:flex justify-center gap-3.5 lg:gap-7 md:text-base font-semibold text-white fade-in"
+        style="text-shadow: 2px 1px 10px rgba(0,0,0,0.2);">
             <li>
                 <NuxtLink to="/" class="hover:underline underline-offset-4">Home</NuxtLink>
             </li>
@@ -38,7 +41,7 @@
 
     <!-- Mobile Menu -->
     <div v-if="isOpen"
-        class="md:hidden fixed top-[55px] left-0 w-full h-[60vh] bg-black text-white text-2xl z-50 py-10 fade-in-right">
+        class="md:hidden fixed top-[55px] left-0 w-full h-[70vh] bg-black text-white text-2xl z-50 py-10 fade-in-right">
         <ul class="flex flex-col items-center gap-6 py-6">
             <li>
                 <NuxtLink to="/" class="hover:cursor-pointer hover:underline underline-offset-4">Home</NuxtLink>

@@ -3,10 +3,13 @@
         <div v-for="(item, index) in items" :key="index" class="item" :class="{ active: index === itemActive }">
             <img :src="item.image" />
             <div class="content backdrop-blur-xs bg-black/15 p-3.5 rounded-xl">
-                <p class="text-xs font-semibold text-white/50">
+                <p class="text-xs text-white/55"
+                style="text-shadow: 2px 3.5px 6px rgba(0,0,0,0.9);">
                     Chapter: {{ item.id }}
                 </p>
-                <h2 class="text-4xl py-2.5">{{ item.title }}</h2>
+                <h2 class="text-4xl py-2.5"
+                style="text-shadow: 2px 3.5px 10px rgba(0,0,0,0.7);"
+                >{{ item.title }}</h2>
                 <p class="text-lg indent-[1.1rem] tracking-widest">
                     {{ item.description }}
                 </p>
@@ -14,7 +17,8 @@
                 <!-- Only animate the active button -->
                 <button v-if="index === itemActive" ref="readButton"
                     class="read-btn-animate mt-4 px-5 py-2.5 text-white text-sm md:text-base font-semibold bg-white/10 hover:bg-white/25 backdrop-blur-sm rounded-lg transition duration-300 hover"
-                    @click="openModal(item)">
+                    @click="openModal(item)"
+                    style="text-shadow: 2px 3px 8px rgba(0,0,0,0.2);">
                     📖 Read Chapter
                 </button>
             </div>

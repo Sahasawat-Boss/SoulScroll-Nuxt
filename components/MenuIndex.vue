@@ -2,7 +2,7 @@
     <div
         class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center space-y-6 fade-in">
         <h1 class="text-4xl md:text-5xl font-bold tracking-wide fade-in-up drop-shadow-xl"
-            style="text-shadow: 2px 3px 5px rgba(0,0,0,0.8);">
+            style="text-shadow: 2px 3px 6px rgba(0,0,0,0.8);">
             SoulScroll
         </h1>
 

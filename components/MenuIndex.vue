@@ -1,7 +1,11 @@
 <template>
     <div
         class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center space-y-6 fade-in">
-        <h1 class="text-4xl md:text-5xl font-bold tracking-wide fade-in-up drop-shadow-lg">SoulScroll</h1>
+        <h1 class="text-4xl md:text-5xl font-bold tracking-wide fade-in-up drop-shadow-xl"
+            style="text-shadow: 2px 3px 5px rgba(0,0,0,0.8);">
+            SoulScroll
+        </h1>
+
         <p class="w-sm px-12 md:w-full md:text-lg opacity-85 fade-in-up2 tracking-wide">
             A journey through shadows, myth, and legend
         </p>
@@ -16,13 +20,13 @@
             <div class="relative flex fade-in-right2 hover2">
                 <NuxtLink to="/book2" class="menu-btn">Book 2</NuxtLink>
                 <span class="absolute -right-1 -bottom-1 text-xl text-yellow-400/30">
-                    <BxSolidLock/>
+                    <BxSolidLock />
                 </span>
             </div>
             <div class="relative flex fade-in-right2 hover2">
                 <NuxtLink to="/about" class="menu-btn">About</NuxtLink>
                 <span class="absolute -right-1 -bottom-1 text-xl text-gray-400/80">
-                    <FlQuestionCircle/>
+                    <FlQuestionCircle />
                 </span>
             </div>
         </div>

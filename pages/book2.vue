@@ -7,7 +7,9 @@
 
         <!-- Centered content -->
         <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 fade-in">
-            <h1 class="text-3xl md:text-4xl font-bold  hover">Book 2</h1>
+            <h1 class="text-3xl md:text-4xl font-semibold hover"
+            style="text-shadow: 2px 3.5px 5px rgba(0,0,0,0.6);">
+            Book 2</h1>
             <div class="mt-1.5 flex md:text-xl font-bold font-serif opacity-40">
                 <AnFilledLock class="text-lg m-0.5 text-yellow-300"/>
                 <p class="text-yellow-300">Locked</p>

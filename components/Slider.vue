@@ -22,12 +22,12 @@
 
         <!-- Modal -->
         <div v-if="showModal" class="fixed inset-0 z-50 bg-black/80 flex items-center justify-center">
-            <div class="bg-white text-black rounded-lg w-lg md:w-2xl py-8 px-8 relative">
+            <div class="bg-white text-black rounded-lg w-[90vw] md:w-lg h-[400px] overflow-y-auto py-8 px-8 relative">
                 <h3 class="text-3xl font-bold mb-4">
                     Chapter {{ selectedChapter.id }}: {{ selectedChapter.title }}
                 </h3>
 
-                <p class="mb-6 text-lg indent-4 tracking-wider whitespace-pre-line">
+                <p class="mb-6 text-base md:text-lg indent-4 tracking-wider whitespace-pre-line">
                     {{ selectedChapter.fullText }}
                 </p>
 

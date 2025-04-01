@@ -1,20 +1,20 @@
 <template>
     <div class="thumbnail-container">
         <!-- Arrows Above -->
-        <div class="flex gap-3 justify-center w-full md:scale-125 mb-1.5 md:mb-5 fade-in-up">
+        <div class="flex gap-3 justify-center w-full md:scale-110 mb-4 fade-in-up">
             <button @click="$emit('prev')" title="Previous"
-                class="w-8 h-8  rounded bg-white/30 text-white text-xl font-mono hover:bg-white hover:text-black hover">
+                class="w-7.5 h-7.5  rounded bg-white/30 text-white text-xl font-mono hover:bg-white hover:text-black hover">
                 ‹
             </button>
             <button @click="$emit('next')" title="Next"
-                class="w-8 h-8 rounded bg-white/30 text-white text-xl font-mono hover:bg-white hover:text-black hover">
+                class="w-7.5 h-7.5 rounded bg-white/30 text-white text-xl font-mono hover:bg-white hover:text-black hover">
                 ›
             </button>
         </div>
 
 
         <!-- Thumbnail List -->
-        <div class="thumbnail fade-in-up">
+        <div class="thumbnail fade-in-up w-[100%]">
             <div v-for="(item, index) in items" :key="index" class="item hover:cursor-pointer"
                 :class="{ active: index === itemActive }" @click="$emit('slideTo', index)">
                 <img :src="item.image" />
@@ -50,8 +50,6 @@ defineEmits(['slideTo', 'prev', 'next'])
 .thumbnail {
     display: flex;
     gap: 10px;
-    width: 100%;
-    height: 220px;
     padding: 0 10px;
     overflow-x: auto;
     overflow-y: hidden;

@@ -187,7 +187,7 @@ body {
 }
 
 .pulse-opacity {
-    animation: pulseOpacity 6s ease-in-out infinite;
+    animation: pulseOpacity 4.5s ease-in-out infinite;
 }
 
 /*!====== CSS ==========================================*/

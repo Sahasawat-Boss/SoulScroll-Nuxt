@@ -55,7 +55,8 @@ onBeforeUnmount(() => {
             <Slider :items="items" :itemActive="itemActive" />
 
             <Thumbnail :items="items" :itemActive="itemActive" @slideTo="goToSlide" @prev="prevSlide"
-                @next="nextSlide" />
+                @next="nextSlide" 
+                />
         </div>
     </div>
 </template>

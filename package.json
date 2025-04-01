@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@kalimahapps/vue-icons": "^1.7.1",
     "@tailwindcss/vite": "^4.0.17",
     "nuxt": "^3.16.1",
     "tailwindcss": "^4.0.17",

@@ -5,8 +5,8 @@
 
         <!-- Play/Pause Button -->
         <button @click="toggleAudio"
-            class="fixed top-11 left-11 md:left-18 z-[999] bg-white/20 text-white text-sm px-2 py-1 rounded hover:bg-white/30 backdrop-blur-sm">
-            {{ isPlaying ? 'Pause Music' : 'Play Music' }}
+            class="fixed top-3.5 left-45 md:left-56 z-[999] bg-white/20 text-white text-sm px-1.5 py-1 rounded hover backdrop-blur-sm">
+            <component :is="isPlaying ?  IconPlay : IconPause" class="w-5 h-5 md:w-6 md:h-6" />
         </button>
 
         <!-- Your page content -->
@@ -20,6 +20,9 @@ import { ref, onMounted } from 'vue'
 const audioSrc = '/audio/theme.mp3'
 const bgm = ref(null)
 const isPlaying = ref(false)
+
+const IconPlay = FlFilledMusicNote2 
+const IconPause = FlFilledMusicNoteOff2
 
 const toggleAudio = () => {
     const audio = bgm.value
@@ -56,4 +59,6 @@ onMounted(() => {
     window.addEventListener('click', tryPlay)
 })
 
+// Import Icon
+import { FlFilledMusicNoteOff2, FlFilledMusicNote2 } from '@kalimahapps/vue-icons';
 </script>

@@ -3,22 +3,22 @@
         class="z-50 px-4.5 md:px-6 py-3 fixed top-0 left-0 w-full backdrop-blur-xs bg-black/20 border-b border-white/15 shadow-md flex items-center justify-between">
 
         <!-- Logo -->
-        <div class="text-2xl md:text-3xl font-bold text-white hover italic fade-in">
+        <div class="flex text-2xl md:text-3xl font-bold text-white hover italic fade-in">
             SoulScroll
         </div>
 
+        <!-- External Link -->
+        <a href="https://bossbsynth.com/" class="hidden text-sm md:block text-white hover italic fade-in">
+            bossbsynth.com
+        </a>
+
         <!-- Desktop Menu -->
-        <ul class="hidden md:flex justify-center gap-6 font-semibold text-lg md:text-xl text-white fade-in">
+        <ul class="hidden md:flex justify-center gap-4 font-semibold text-lg md:text-xl text-white fade-in">
             <li class="hover">Home</li>
             <li class="hover opacity-60">Book 1</li>
             <li class="hover opacity-60">Book 2</li>
             <li class="hover opacity-60">About</li>
         </ul>
-
-        <!-- External Link -->
-        <a href="https://bossbsynth.com/" class="hidden md:block text-white hover italic fade-in">
-            bossbsynth.com
-        </a>
 
         <!-- Mobile Menu Icon -->
         <div class="md:hidden fade-in">
@@ -53,4 +53,5 @@
 <script setup>
 import { ref } from 'vue'
 const isOpen = ref(false)
+
 </script>

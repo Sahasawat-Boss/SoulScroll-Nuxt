@@ -16,7 +16,7 @@ export const SlideItems = [
         id: 3,
         image: '/images/book1/img3.jpg',
         title: 'Stormbound Raiders',
-        description: 'Viking ships charge through a storm, lightning flashing as fearless warriors push toward conquest.'
+        description: 'Greek warships push through rough waves and thunder, with determined warriors ready for whatever comes next.'
     },
     {
         id: 4,

@@ -65,7 +65,7 @@ const playClickSound = () => {
 onMounted(() => {
     // Lower click sound volume
     if (clickSound.value) {
-        clickSound.value.volume = 0.03
+        clickSound.value.volume = 0.2
     }
 
     const tryPlay = () => {

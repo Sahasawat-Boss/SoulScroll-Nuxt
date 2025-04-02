@@ -23,7 +23,7 @@
 import { ref, onMounted } from 'vue'
 import { FlFilledMusicNoteOff2, FlFilledMusicNote2 } from '@kalimahapps/vue-icons'
 
-const audioSrc = '/audio/theme.mp3'
+const audioSrc = '/audio/theme2.mp3'
 const clickSoundSrc = '/audio/click-sound.mp3' // your click sound
 
 const bgm = ref(null)
@@ -70,20 +70,20 @@ onMounted(() => {
 
     const tryPlay = () => {
         if (!isPlaying.value && bgm.value) {
-            bgm.value.volume = 0
+            bgm.value.volume = 0                       // Start with volume at 0 (silent), so we can fade in smoothly
             bgm.value.play().then(() => {
-                isPlaying.value = true
+                isPlaying.value = true 
                 let vol = 0                            // Start a fade-in effect by gradually increasing the volume
-                const targetVolume = 0.85 // 🔊 Set your desired base volume here
+                const targetVolume = 0.8 // 🔊 Set your desired base volume here
 
                 const fadeIn = setInterval(() => {
-                    vol += 0.1 // smaller steps = smoother fade
+                    vol += 0.05 // smaller steps = smoother fade
                     if (vol >= targetVolume) {                // If volume reaches or exceeds 1 (max), cap it at 1 and stop the fade
                         vol = targetVolume
                         clearInterval(fadeIn)
                     }
                     bgm.value.volume = vol
-                }, 100) // Runs every 100 milliseconds
+                }, 50 ) // Runs every 50 milliseconds
             }).catch(() => {
                 console.warn('Autoplay blocked')
             })

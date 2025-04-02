@@ -15,22 +15,22 @@
         </a>
 
         <!-- Desktop Menu -->
-        <ul class="hidden md:flex justify-center gap-3.5 lg:gap-7 md:text-base font-medium text-white fade-in"
+        <ul class="hidden md:flex justify-center gap-3.5 lg:gap-5 md:text-sm lg:text-base font-medium text-white fade-in"
             style="text-shadow: 2px 1px 8px rgba(0,0,0,0.6);">
             <li>
                 <NuxtLink to="/" class="hover:underline underline-offset-4" active-class="text-blue-400">Home</NuxtLink>
             </li>
             <li>
-                <NuxtLink to="/book1" class="hover:underline underline-offset-4" active-class="text-blue-400">Book1
-                </NuxtLink>
+                <NuxtLink to="/book/book1" class="hover:underline underline-offset-4" active-class="text-blue-400">Book1</NuxtLink>
             </li>
             <li>
-                <NuxtLink to="/book2" class="hover:underline underline-offset-4" active-class="text-blue-400">Book2
-                </NuxtLink>
+                <NuxtLink to="/book/book1map" class="hover:underline underline-offset-4" active-class="text-blue-400">Book 1 Map</NuxtLink>
             </li>
             <li>
-                <NuxtLink to="/about" class="hover:underline underline-offset-4" active-class="text-blue-400">About
-                </NuxtLink>
+                <NuxtLink to="/book2" class="hover:underline underline-offset-4" active-class="text-blue-400">Book 2</NuxtLink>
+            </li>
+            <li>
+                <NuxtLink to="/about" class="hover:underline underline-offset-4" active-class="text-blue-400">About</NuxtLink>
             </li>
         </ul>
 
@@ -52,8 +52,12 @@
                     active-class="text-blue-400">Home</NuxtLink>
             </li>
             <li>
-                <NuxtLink to="/book1" class="hover:cursor-pointer hover:underline underline-offset-4"
+                <NuxtLink to="/book/book1" class="hover:cursor-pointer hover:underline underline-offset-4"
                     active-class="text-blue-400">Book 1</NuxtLink>
+            </li>
+            <li>
+                <NuxtLink to="/book/book1map" class="hover:cursor-pointer hover:underline underline-offset-4"
+                    active-class="text-blue-400">Book 1 Map</NuxtLink>
             </li>
             <li>
                 <NuxtLink to="/book2" class="hover:cursor-pointer hover:underline underline-offset-4"

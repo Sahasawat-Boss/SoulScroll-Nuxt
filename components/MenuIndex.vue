@@ -26,7 +26,7 @@
             </div>
             <div class="relative flex fade-in-right2 hover2 shadow-xl">
                 <NuxtLink to="/about" class="menu-btn">About</NuxtLink>
-                <span class="absolute -right-1 -bottom-1 text-xl text-gray-300/60">
+                <span class="absolute -right-1 -bottom-1 text-xl text-gray-300/70">
                     <FlQuestionCircle />
                 </span>
             </div>
@@ -34,7 +34,7 @@
 
         <!-- bossbsynth.com - External Link -->
         <a href="https://bossbsynth.com/"
-            class="fixed bottom-8 text-xs md:text-sm text-white/65 hover italic mt-1 fade-in"
+            class="fixed bottom-5 text-xs md:text-sm text-white/65 hover italic mt-1 fade-in"
             style="text-shadow: 2px 3px 7px rgba(0,0,0,0.6);">
             bossbsynth.com
         </a>

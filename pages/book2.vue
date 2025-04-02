@@ -10,8 +10,8 @@
             <h1 class="text-3xl md:text-4xl font-semibold hover"
             style="text-shadow: 2px 3.5px 6px rgba(0,0,0,0.6);">
             Book 2</h1>
-            <div class="mt-1.5 flex md:text-xl font-bold font-serif opacity-40">
-                <AnFilledLock class="text-lg m-0.5 text-yellow-300"/>
+            <div class="mt-1.5 flex md:text-xl font-bold font-serif opacity-50">
+                <AnFilledLock class="text-lg m-1 text-yellow-400"/>
                 <p class="text-yellow-300">Locked</p>
             </div>
             <p class="mt-8 text-base md:text-xl italic max-w-lg tracking-wider">

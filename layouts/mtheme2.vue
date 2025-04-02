@@ -1,3 +1,12 @@
+<!-- 
+*Use this Custom Layout in Script* 
+
+definePageMeta({
+    layout: 'mtheme2'
+})
+
+-->
+
 <template>
     <div>
         <!-- Audio Player -->

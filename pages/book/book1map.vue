@@ -36,10 +36,6 @@
 </template>
 
 <script setup>
-definePageMeta({
-    layout: 'mtheme2'
-})
-
 import { SlideItems } from '~/data/Items'
 const items = SlideItems
 

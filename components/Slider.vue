@@ -27,7 +27,12 @@
                         <button v-if="index === itemActive" ref="readButton"
                             class="read-btn-animate mt-3 px-3 py-2 text-white text-sm md:text-base font-semibold bg-white/16 hover:bg-white/25 backdrop-blur-sm rounded-lg transition duration-300 hover  tracking-wider"
                             style="text-shadow: 2px 3px 8px rgba(0,0,0,0.2);">
-                            Map
+                            <div class="flex">
+                                <span class="mt-0.5 mr-1">
+                                    <AkMap />
+                                </span>
+                                <span>Map</span>
+                            </div>
                         </button>
                     </NuxtLink>
                 </div>
@@ -68,6 +73,7 @@
 <script setup>
 import { ref, watch, nextTick } from 'vue'
 import { chapterDetails } from '~/data/chapterDetails'
+import { AkMap } from '@kalimahapps/vue-icons';
 
 
 const props = defineProps(['items', 'itemActive'])

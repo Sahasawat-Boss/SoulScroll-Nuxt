@@ -7,13 +7,6 @@
             SoulScroll
         </NuxtLink>
 
-
-        <!-- bossbsynth.com - External Link -->
-        <a href="https://bossbsynth.com/" class="hidden md:block text-[10px] md:text-sm text-white hover italic mt-1 fade-in
-            " style="text-shadow: 2px 3px 7px rgba(0,0,0,0.6);">
-            bossbsynth.com
-        </a>
-
         <!-- Desktop Menu -->
         <ul class="hidden md:flex justify-center gap-3.5 lg:gap-5 md:text-sm lg:text-base font-medium text-white fade-in"
             style="text-shadow: 2px 1px 8px rgba(0,0,0,0.6);">
@@ -21,10 +14,10 @@
                 <NuxtLink to="/" class="hover:underline underline-offset-4" active-class="text-blue-400">Home</NuxtLink>
             </li>
             <li>
-                <NuxtLink to="/book/book1" class="hover:underline underline-offset-4" active-class="text-blue-400">Book1</NuxtLink>
+                <NuxtLink to="/book/book1" class="hover:underline underline-offset-4" active-class="text-blue-400">Book 1</NuxtLink>
             </li>
             <li>
-                <NuxtLink to="/book/book1map" class="hover:underline underline-offset-4" active-class="text-blue-400">Book 1 Map</NuxtLink>
+                <NuxtLink to="/book/book1map" class="hover:underline underline-offset-4" active-class="text-blue-400">Map</NuxtLink>
             </li>
             <li>
                 <NuxtLink to="/book/book2" class="hover:underline underline-offset-4" active-class="text-blue-400">Book 2</NuxtLink>
@@ -57,7 +50,7 @@
             </li>
             <li>
                 <NuxtLink to="/book/book1map" class="hover:cursor-pointer hover:underline underline-offset-4"
-                    active-class="text-blue-400">Book 1 Map</NuxtLink>
+                    active-class="text-blue-400">Map</NuxtLink>
             </li>
             <li>
                 <NuxtLink to="/book/book2" class="hover:cursor-pointer hover:underline underline-offset-4"

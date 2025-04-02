@@ -11,7 +11,7 @@
         <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-6 fade-in">
             <h1 class="text-3xl md:text-4xl font-semibold mb-8 hover"
                 style="text-shadow: 2px 3.5px 6px rgba(0,0,0,0.6);">
-            About SoulScroll</h1>
+                About SoulScroll</h1>
             <p class="w-[21rem] md:w-2xl text-base md:text-lg opacity-90 leading-relaxed mb-6">
                 <span class="font-bold text-lg">SoulScroll </span> is a fantasy story told through visuals, music, and
                 text. Each chapter uncovers a mythical world of ancient guardians, titans, and epic battles. Explore it
@@ -28,9 +28,17 @@
                     </span>
                 </div>
             </a>
-            <NuxtLink to="/" class="bg-white/20 px-5 py-2 rounded text-white text-lg hover:bg-white/40  fade-in-up2">
+            <NuxtLink to="/"
+                class="bg-white/20 px-4 py-1 rounded-lg text-white text-base hover:bg-white/40  fade-in-up2">
                 ⟵ Back to Menu
             </NuxtLink>
+
+            <!-- bossbsynth.com - External Link -->
+            <a href="https://bossbsynth.com/"
+                class="fixed bottom-5 text-xs md:text-sm text-white/65 hover italic mt-1 fade-in"
+                style="text-shadow: 2px 3px 7px rgba(0,0,0,0.6);">
+                bossbsynth.com
+            </a>
         </div>
     </div>
 </template>

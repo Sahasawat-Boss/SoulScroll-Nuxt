@@ -11,7 +11,7 @@
             A journey through shadows, myth, and legend
         </p>
 
-        <div class="flex flex-col items-center justify-center gap-5.5 mt-8">
+        <div class="flex flex-col items-center justify-center gap-4 mt-8">
             <div class="relative flex fade-in-right1 float-y hover2 shadow-lg">
                 <NuxtLink to="/book/book1" class="menu-btn2">Book 1</NuxtLink>
                 <span class="absolute -right-4.5 -bottom-1 float-x text-2xl text-blue-400">
@@ -19,9 +19,15 @@
                 </span>
             </div>
             <div class="relative flex fade-in-right1 float-y hover2 shadow-lg">
-                <NuxtLink to="/book/book1map" class="menu-btn2">Book 1 Map</NuxtLink>
+                <NuxtLink to="/book/book1map" class="menu-btn2">Map</NuxtLink>
                 <span class="absolute -right-2 -bottom-1 text-2xl text-white/50">
                     <LuScroll/>
+                </span>
+            </div>
+            <div class="relative flex fade-in-right1 float-y hover2 shadow-lg">
+                <NuxtLink to="/inventory/book1" class="menu-btn2">inventory</NuxtLink>
+                <span class="absolute -right-2 -bottom-1 text-2xl text-white/50">
+                    <CaInventoryManagement/>
                 </span>
             </div>
             <div class="relative flex fade-in-right2 hover2 shadow-lg">
@@ -48,6 +54,6 @@
 </template>
 
 <script setup>
-import { LuSword, BxSolidLock, FlQuestionCircle, LuScroll} from '@kalimahapps/vue-icons';
+import { LuSword, BxSolidLock, FlQuestionCircle,CaInventoryManagement, LuScroll} from '@kalimahapps/vue-icons';
 
 </script>

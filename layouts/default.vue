@@ -3,6 +3,9 @@
         <!-- Audio Player -->
         <audio ref="bgm" :src="audioSrc" loop preload="auto"></audio>
 
+        <!-- Click Sound -->
+        <audio ref="clickSound" :src="clickSoundSrc" preload="auto"></audio>
+
         <!-- Play/Pause Button -->
         <div>
             <button @click="toggleAudio"
@@ -18,9 +21,13 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import { FlFilledMusicNoteOff2, FlFilledMusicNote2 } from '@kalimahapps/vue-icons'
 
 const audioSrc = '/audio/theme.mp3'
+const clickSoundSrc = '/audio/click-sound.mp3' // your click sound
+
 const bgm = ref(null)
+const clickSound = ref(null)
 const isPlaying = ref(false)
 
 const IconPlay = FlFilledMusicNote2
@@ -30,30 +37,42 @@ const toggleAudio = () => {
     const audio = bgm.value
     if (!audio) return
 
+    playClickSound()
+
     if (isPlaying.value) {
         audio.pause()
-        isPlaying.value = false // ✅ make sure to update state
+        isPlaying.value = false
     } else {
-        audio
-            .play()
-            .then(() => {
-                isPlaying.value = true
-            })
-            .catch((err) => {
-                console.warn('Playback failed:', err)
-            })
+        audio.play().then(() => {
+            isPlaying.value = true
+        }).catch(err => {
+            console.warn('Playback failed:', err)
+        })
     }
 }
 
-// Optional: auto-trigger audio after user clicks anywhere
+const playClickSound = () => {
+    if (!clickSound.value) return
+
+    // Reset and play
+    clickSound.value.currentTime = 0
+    clickSound.value.play().catch(err => {
+        console.warn('Click sound failed:', err)
+    })
+}
+
+// Auto play BGM after first interaction
 onMounted(() => {
+    // Lower click sound volume
+    if (clickSound.value) {
+        clickSound.value.volume = 0.25
+    }
+
     const tryPlay = () => {
         if (!isPlaying.value && bgm.value) {
-            bgm.value.volume = 0 // start muted
+            bgm.value.volume = 0
             bgm.value.play().then(() => {
                 isPlaying.value = true
-
-                // slowly fade in audio
                 let vol = 0
                 const fadeIn = setInterval(() => {
                     vol += 0.5
@@ -73,12 +92,13 @@ onMounted(() => {
         window.removeEventListener('touchstart', tryPlay)
     }
 
+    // Listen for global click to trigger audio
     window.addEventListener('click', tryPlay)
     window.addEventListener('keydown', tryPlay)
     window.addEventListener('touchstart', tryPlay)
+
+    // Also add global click sound effect
+    window.addEventListener('click', playClickSound)
 })
 
-
-// Import Icon
-import { FlFilledMusicNoteOff2, FlFilledMusicNote2 } from '@kalimahapps/vue-icons';
 </script>

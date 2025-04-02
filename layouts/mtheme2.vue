@@ -74,10 +74,10 @@ onMounted(() => {
             bgm.value.play().then(() => {
                 isPlaying.value = true 
                 let vol = 0                            // Start a fade-in effect by gradually increasing the volume
-                const targetVolume = 0.8 // 🔊 Set your desired base volume here
+                const targetVolume = 0.85 // 🔊 Set your desired base volume here
 
                 const fadeIn = setInterval(() => {
-                    vol += 0.05 // smaller steps = smoother fade
+                    vol += 0.8 // smaller steps = smoother fade
                     if (vol >= targetVolume) {                // If volume reaches or exceeds 1 (max), cap it at 1 and stop the fade
                         vol = targetVolume
                         clearInterval(fadeIn)

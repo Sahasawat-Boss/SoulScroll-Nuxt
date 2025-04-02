@@ -14,7 +14,7 @@
         <div class="flex flex-col gap-5.5 mt-8">
             <div class="relative flex fade-in-right1 float-y hover2 shadow-lg">
                 <NuxtLink to="/book1" class="menu-btn2">Book 1</NuxtLink>
-                <span class="absolute -right-4 -bottom-1 float-x text-2lg text-blue-400">
+                <span class="absolute -right-3.5 -bottom-1 float-x text-2xl text-blue-400">
                     <LuSword />
                 </span>
             </div>

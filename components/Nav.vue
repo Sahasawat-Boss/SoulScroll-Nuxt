@@ -27,7 +27,7 @@
                 <NuxtLink to="/book/book1map" class="hover:underline underline-offset-4" active-class="text-blue-400">Book 1 Map</NuxtLink>
             </li>
             <li>
-                <NuxtLink to="/book2" class="hover:underline underline-offset-4" active-class="text-blue-400">Book 2</NuxtLink>
+                <NuxtLink to="/book/book2" class="hover:underline underline-offset-4" active-class="text-blue-400">Book 2</NuxtLink>
             </li>
             <li>
                 <NuxtLink to="/about" class="hover:underline underline-offset-4" active-class="text-blue-400">About</NuxtLink>
@@ -60,7 +60,7 @@
                     active-class="text-blue-400">Book 1 Map</NuxtLink>
             </li>
             <li>
-                <NuxtLink to="/book2" class="hover:cursor-pointer hover:underline underline-offset-4"
+                <NuxtLink to="/book/book2" class="hover:cursor-pointer hover:underline underline-offset-4"
                     active-class="text-blue-400">Book 2</NuxtLink>
             </li>
             <li>

@@ -25,7 +25,7 @@
                 </span>
             </div>
             <div class="relative flex fade-in-right2 hover2 shadow-lg">
-                <NuxtLink to="/book2" class="menu-btn">Book 2</NuxtLink>
+                <NuxtLink to="/book/book2" class="menu-btn">Book 2</NuxtLink>
                 <span class="absolute -right-1 -bottom-1 text-lg text-yellow-400/30">
                     <BxSolidLock />
                 </span>

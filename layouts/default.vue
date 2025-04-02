@@ -65,7 +65,7 @@ const playClickSound = () => {
 onMounted(() => {
     // Lower click sound volume
     if (clickSound.value) {
-        clickSound.value.volume = 0.3
+        clickSound.value.volume = 0.15
     }
 
     const tryPlay = () => {
@@ -85,6 +85,16 @@ onMounted(() => {
             }).catch(() => {
                 console.warn('Autoplay blocked')
             })
+        }
+
+        // ✅ Pre-warm the click sound
+        if (clickSound.value) {
+            clickSound.value.play().then(() => {
+                clickSound.value.pause();
+                clickSound.value.currentTime = 0;
+            }).catch(() => {
+                console.warn('Click sound pre-warm failed');
+            });
         }
 
         window.removeEventListener('click', tryPlay)

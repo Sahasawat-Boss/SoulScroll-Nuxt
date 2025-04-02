@@ -18,7 +18,7 @@
                 <!-- Only animate the active button -->
                 <div class="flex gap-2">
                     <button v-if="index === itemActive" ref="readButton"
-                        class="read-btn-animate mt-3 ml-2 px-3 py-2 text-white text-sm md:text-base font-semibold bg-white/16 hover:bg-white/25 backdrop-blur-sm rounded-lg transition duration-300 hover  tracking-wider"
+                        class="read-btn-animate mt-3 px-3 py-2 text-white text-sm md:text-base font-semibold bg-white/16 hover:bg-white/25 backdrop-blur-sm rounded-lg transition duration-300 hover  tracking-wider"
                         @click="openModal(item)" style="text-shadow: 2px 3px 8px rgba(0,0,0,0.2);">
                         📖 Read Chapter
                     </button>

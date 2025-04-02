@@ -21,8 +21,8 @@
                 <div v-for="item in items" :key="item.id"
                     class="hover:bg-white/10 transition rounded-xl px-4 py-2 sm:p-5 relative">
 
-                    <div class="absolute -left-5.5 top-3.5 md:-left-8.5 md:top-6">
-                        <AkDoubleSword class="text-lg md:text-xl text-white/65" />
+                    <div class="absolute -left-5.5 top-4 sm:-left-8.5 sm:top-6.5 float-y">
+                        <AkDoubleSword class="text-lg sm:text-xl text-white/50" />
                     </div>
 
                     <h2 class="text-lg md:text-xl font-semibold">{{ item.title }}</h2>

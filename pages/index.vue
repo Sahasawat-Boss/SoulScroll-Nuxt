@@ -1,5 +1,5 @@
 <template>
-    <div class="relative h-screen w-full bg-cover bg-center" style="background-image: url('/images/menu/knight0.png')">
+    <div class="relative h-screen w-full bg-cover bg-center" style="background-image: url('/images/menu/home.jpg')">
         <Nav />
 
         <!-- Overlay -->

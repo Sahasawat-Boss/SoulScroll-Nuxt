@@ -1,6 +1,6 @@
 <script setup>
 import { SlideItems } from '~/data/Items'
-import { Nav, Thumbnail, Slider, BackButton } from '#components'
+import { Nav, Thumbnail, Slider } from '#components'
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 const items = SlideItems
@@ -50,8 +50,6 @@ onBeforeUnmount(() => {
 <template>
     <div>
         <Nav />
-
-        <BackButton />
 
         <div class="slider fade-in">
             <Slider :items="items" :itemActive="itemActive" />

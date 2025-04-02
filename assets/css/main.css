@@ -156,6 +156,9 @@ body {
 .float-y {
     animation: floatY 2.5s ease-in-out infinite;
 }
+.float-y2 {
+    animation: floatY 4s ease-in-out infinite;
+}
 
 @keyframes floatX {
     0% {

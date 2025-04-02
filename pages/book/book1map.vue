@@ -26,7 +26,9 @@
                     </div>
 
                     <h2 class="text-lg md:text-xl font-semibold">{{ item.title }}</h2>
-                    <p class="indent-4 text-sm md:text-base opacity-70">{{ item.description }}</p>
+
+                    <p class="indent-4 text-BASE md:text-LG opacity-70">{{ item.description }}</p>
+
                     <img :src="item.image" :alt="item.title" class="mt-3 rounded-2xl shadow-md w-[45%] md:w-1/2" />
 
                     <div class="flex gap-2 fade-in-right">
